@@ -53,10 +53,19 @@ prepare_data_obj=Prepare_Data()
 data_batch_DEAP,label_batch_DEAP=prepare_data_obj.Prepare_DEAP(DataSeg_PSD_all_trials_DEAP,DataSeg_DE_all_trials_DEAP,labels_all_trials_DEAP,batch_size,num_classes)
 data_batch_SEED,label_batch_SEED=prepare_data_obj.Prepare_SEED(DataSeg_PSD_all_trials_SEED, DataSeg_DE_all_trials_SEED, labels_all_trials_SEED,batch_size,num_classes)
 
+#SEED->DEAP
 train_data_batch_s=data_batch_SEED
 train_label_batch_s=label_batch_SEED
 train_data_batch_t=data_batch_DEAP
 train_label_batch_t=label_batch_DEAP
+
+'''
+#DEAP->SEED
+train_data_batch_s=data_batch_DEAP
+train_label_batch_s=label_batch_DEAP
+train_data_batch_t=data_batch_SEED
+train_label_batch_t=label_batch_SEED
+'''
 
 #Pre-training
 model=Model()
