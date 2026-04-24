@@ -59,11 +59,13 @@ train_label_batch_s=label_batch_SEED
 train_data_batch_t=data_batch_DEAP
 train_label_batch_t=label_batch_DEAP
 
+'''
 #DEAP->SEED
 train_data_batch_s=data_batch_DEAP
 train_label_batch_s=label_batch_DEAP
 train_data_batch_t=data_batch_SEED
 train_label_batch_t=label_batch_SEED
+'''
 
 #Pre-training
 model=Model()
