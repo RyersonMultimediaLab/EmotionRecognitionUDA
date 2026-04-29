@@ -64,7 +64,7 @@ class Load_Data():
 
       #Take samples with labels 0 and 1
       condition1 = labels_all_trials_SEED == 0
-      condition2 = labels_all_trials_SEED == 1
+      condition2 = labels_all_trials_SEED == 2
       indices = np.where(np.logical_or(condition1, condition2))
       labels_all_trials_SEED=labels_all_trials_SEED[indices[0],:]
       DataSeg_PSD_all_trials_SEED=DataSeg_PSD_all_trials_SEED[indices[0],:]
