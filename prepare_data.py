@@ -67,12 +67,6 @@ class Prepare_Data():
 
     DataSeg_PSD_all_trials_SEED=tmp
     random_seed = 8
-    random.seed(random_seed)
-    np.random.seed(random_seed)
-    torch.manual_seed(random_seed)
-    torch.cuda.manual_seed(random_seed)
-    torch.backends.cudnn.deterministic = True
-    torch.backends.cudnn.benchmark = False
     #Reshape
     Data_DE_SEED=np.reshape(DataSeg_DE_all_trials_SEED,(DataSeg_DE_all_trials_SEED.shape[0],DataSeg_DE_all_trials_SEED.shape[1],1))
     Data_PSD_SEED=np.reshape(DataSeg_PSD_all_trials_SEED,(DataSeg_PSD_all_trials_SEED.shape[0],DataSeg_PSD_all_trials_SEED.shape[1],1))
